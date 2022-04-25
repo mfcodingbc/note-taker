@@ -9,6 +9,8 @@ Follow this link to the deployed site: https://protected-tundra-18198.herokuapp.
 ## Usage
 On the home page, click the `Get Started` button to visit the notes page. There, you can create new notes by clicking the `+` button in the upper right corner of the page. After typing a note title and a note description, you can save the note by clicking the save icon in the upper right. The note is then saved and is displayed on the left side of the page. Clicking on one of these saved notes will pull it into the main note area, where upon it can be edited and resaved as a new note. You can also delete notes by clicking on the trash can icon next to the note name. Upon doing so, the note is removed from the list.
 
+![Finished Site Gif](./assets/images/NoteTaker.gif)
+
 ## Technologies Used
  - Express.js
  - Jest
