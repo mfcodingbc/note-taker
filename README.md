@@ -1,44 +1,27 @@
-# Module 11 Assignment: Note Taker (Placeholder README)
+# Note Taker - An application to create, save, and delete notes
 
-**USER STORY**
+## Description
+Website that allows a user to create notes as reminders for themselves, then save those notes which are pulled up upon reloading the page. The notes can also be deleted when no longer needed.
 
-AS A small business owner  
-I WANT to be able to write and save notes  
-SO THAT I can organize my thoughts and keep track of tasks I need to complete  
+## Installation
+Follow this link to the deployed site: https://protected-tundra-18198.herokuapp.com/
 
-**ACCEPTANCE CRITERIA**
+## Usage
+On the home page, click the `Get Started` button to visit the notes page. There, you can create new notes by clicking the `+` button in the upper right corner of the page. After typing a note title and a note description, you can save the note by clicking the save icon in the upper right. The note is then saved and is displayed on the left side of the page. Clicking on one of these saved notes will pull it into the main note area, where upon it can be edited and resaved as a new note. You can also delete notes by clicking on the trash can icon next to the note name. Upon doing so, the note is removed from the list.
 
-GIVEN a note-taking application  
-WHEN I open the Note Taker  
-THEN I am presented with a landing page with a link to a notes page  
-WHEN I click on the link to the notes page  
-THEN I am presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column  
-WHEN I enter a new note title and the note’s text  
-THEN a Save icon appears in the navigation at the top of the page  
-WHEN I click on the Save icon  
-THEN the new note I have entered is saved and appears in the left-hand column with the other existing notes  
-WHEN I click on an existing note in the list in the left-hand column  
-THEN that note appears in the right-hand column  
-WHEN I click on the Write icon in the navigation at the top of the page  
-THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column  
+## Technologies Used
+ - Express.js
+ - Jest
+ - Node.js
+ - Heroku
+ - HTML
+ - CSS
 
-**REQUIREMENTS**
+## Credits
 
-The application should have a `db.json` file on the back end that will be used to store and retrieve notes using the `fs` module.
+Created following the MSU Coding Bootcamp module on Express.js.
+CSS, HTML, and front end JavaScript created by [Xandromus](https://github.com/Xandromus) and [nol166](https://github.com/nol166), while back-end coding using Express.js and Jest done by myself [mfcodingbc](https://github.com/mfcodingbc).
 
-The following HTML routes should be created:  
-`GET /notes` should return the `notes.html` file.  
-`GET *` should return the `index.html` file.
+## License
 
-The following API routes should be created:  
-`GET /api/notes` should read the db.json file and return all saved notes as JSON.  
-`POST /api/notes` should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client. Find a way to give each note a unique id when it's saved (look into `npm` packages that could do this).
-
-**BONUS**
-
-`DELETE /api/notes/:id` should receive a query parameter containing the id of a note to delete. In order to delete a note, you'll need to read all notes from the `db.json` file, remove the note with the given `id` property, and then rewrite the notes to the `db.json` file.
-
-**CHALLENGE SUBMISSION**
-
-- The URL of the functional, deployed application.
-- The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+[MIT](https://choosealicense.com/licenses/mit/)
